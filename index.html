@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全域數位導流實戰班｜Google商家 x Linkgoods x 自媒體</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1E40AF', // Deep Blue
+                        secondary: '#F59E0B', // Amber/Orange for CTAs
+                        dark: '#111827',
+                        light: '#F3F4F6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for gradient text and smooth animations */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #3B82F6, #10B981);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 bg-white shadow-sm bg-opacity-95 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <span class="font-bold text-xl text-gray-900 hidden sm:block">數位全域導流</span>
+                </div>
+                <div>
+                    <a href="#registration" class="bg-secondary hover:bg-yellow-500 text-white px-6 py-2.5 rounded-full font-bold transition duration-300 shadow-lg shadow-yellow-500/30">
+                        立即報名 <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-32 pb-20 lg:pt-40 lg:pb-28 text-white relative overflow-hidden">
+        <!-- Abstract background elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none opacity-20">
+            <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-blue-500 blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-purple-500 blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-900/50 border border-blue-400/30 text-blue-300 font-semibold text-sm mb-6">
+                🚀 2026 最新數位獲客系統實戰班
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                每天發 IG 卻沒客人？<br class="hidden md:block">
+                打造你的 <span class="text-gradient">自動客流系統</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                Google 商家 SEO × Linkgoods 電子名片 × 自媒體導流<br>
+                從流量到留存，3 步驟把「看熱鬧的流量」變成「肯掏錢的客源」！
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#registration" class="bg-secondary hover:bg-yellow-500 text-white px-8 py-4 rounded-full font-bold text-lg transition duration-300 shadow-xl shadow-yellow-500/20 transform hover:scale-105">
+                    搶佔早鳥優惠席次
+                </a>
+                <a href="#curriculum" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg transition duration-300 backdrop-blur-sm">
+                    查看課程大綱
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">你是否也遇過以下狀況？</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Point 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-red-100 text-red-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-heart-crack"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">流量高，沒轉換</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        用心拍了 IG/TikTok 短影音，按讚觀看數很高，但根本沒有轉換成實際業績，流量無法變現。
+                    </p>
+                </div>
+                <!-- Point 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-store-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Google 搜不到你</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        客人在 Google 地圖上搜尋在地服務，總是先看到你的競爭對手，白白流失最精準的主動需求客戶。
+                    </p>
+                </div>
+                <!-- Point 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-link-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">門面雜亂，客戶流失</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        好不容易在社群上聊出興趣，卻沒有一個專業的數位門面整合資訊，繁瑣的步驟讓客戶放棄預約或下單。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section (The Triangle) -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                        突破困境！<br>
+                        打造最強 <span class="text-primary">數位導流轉換金三角</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        流量越來越貴，單靠一種管道已經不夠。在這堂實戰課中，我們不談空泛的理論，直接帶你建置能自動化運作的商業流程。
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-pink-100 text-pink-500 rounded-lg flex items-center justify-center text-xl mt-1">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-gray-900">1. 前端引流 (自媒體)</h4>
+                                <p class="text-gray-600 mt-1">用精準的 IG/FB/TikTok 策略，把陌生人的眼球吸引過來。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-purple-100 text-purple-500 rounded-lg flex items-center justify-center text-xl mt-1">
+                                <i class="fa-solid fa-id-card"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-gray-900">2. 信任承接 (Linkgoods)</h4>
+                                <p class="text-gray-600 mt-1">用最強的電子名片整合資訊，一鍵引導預約，無痛下單。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mt-1">
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-gray-900">3. 在地收網 (Google商家)</h4>
+                                <p class="text-gray-600 mt-1">打造 24 小時為你接單的線上分店，有需求的客戶一搜就找到你！</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 w-full relative">
+                    <!-- Decorative Graphic -->
+                    <div class="aspect-square bg-white rounded-full shadow-2xl flex items-center justify-center p-12 relative border-8 border-gray-50">
+                        <div class="absolute top-10 left-10 bg-white p-4 rounded-xl shadow-lg animate-bounce" style="animation-duration: 3s;">
+                            <i class="fa-brands fa-tiktok text-3xl text-black"></i>
+                        </div>
+                        <div class="absolute bottom-10 left-20 bg-white p-4 rounded-xl shadow-lg animate-bounce" style="animation-duration: 4s;">
+                            <i class="fa-brands fa-google text-3xl text-blue-500"></i>
+                        </div>
+                        <div class="absolute top-1/3 right-5 bg-white p-4 rounded-xl shadow-lg animate-bounce" style="animation-duration: 3.5s;">
+                            <i class="fa-solid fa-link text-3xl text-purple-500"></i>
+                        </div>
+                        <div class="text-center z-10">
+                            <div class="text-5xl font-black text-primary mb-2">300%</div>
+                            <div class="text-gray-500 font-bold">預期轉換率提升</div>
+                        </div>
+                        <!-- Circular gradient background inside -->
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-50 to-orange-50 opacity-50 -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">實戰課程核心大綱</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">系統化教學，從零到一帶你實作，課堂結束直接帶走一套生財工具。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Module 1 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col h-full card-hover">
+                    <div class="h-3 bg-blue-500 w-full"></div>
+                    <div class="p-8 flex-grow">
+                        <div class="text-blue-500 font-black text-5xl opacity-20 absolute right-8 top-12">01</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 relative z-10">
+                            Google 商家 SEO<br><span class="text-lg text-primary font-medium">在地印鈔機建置</span>
+                        </h3>
+                        <ul class="space-y-4 text-gray-600 relative z-10">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>0-1 基礎建置：</strong>商家檔案完美設定，避開停權地雷與常見誤區。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>SEO 排名優化：</strong>實體店面關鍵字佈局策略，讓你在 Google 地圖霸榜。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>星級評論轉換：</strong>系統化引導客戶留下五星好評，建立絕對信任感。</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col h-full card-hover">
+                    <div class="h-3 bg-purple-500 w-full"></div>
+                    <div class="p-8 flex-grow relative">
+                        <div class="text-purple-500 font-black text-5xl opacity-20 absolute right-8 top-12">02</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 relative z-10">
+                            Linkgoods 設置<br><span class="text-lg text-purple-600 font-medium">高轉化數位門面</span>
+                        </h3>
+                        <ul class="space-y-4 text-gray-600 relative z-10">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>註冊與版面設計：</strong>打造符合品牌調性、直覺易用的專屬數位名片。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>多連結整合術：</strong>巧妙安排 LINE@、官網、社群，大幅降低跳出率。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>轉換率提升技巧：</strong>埋設追蹤與引導按鈕，讓名片變成超級業務員。</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col h-full card-hover">
+                    <div class="h-3 bg-pink-500 w-full"></div>
+                    <div class="p-8 flex-grow relative">
+                        <div class="text-pink-500 font-black text-5xl opacity-20 absolute right-8 top-12">03</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 relative z-10">
+                            自媒體全域導流<br><span class="text-lg text-pink-600 font-medium">圈粉變現指南</span>
+                        </h3>
+                        <ul class="space-y-4 text-gray-600 relative z-10">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>平台特性拆解：</strong>IG/FB/TikTok 受眾分析，把對的內容放在對的地方。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>高轉換內容公式：</strong>不用百萬流量也能變現的「精準導流」企劃架構。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                                <span><strong>流量閉環建置：</strong>無縫引導社群流量至數位名片與商家，完成最終轉換。</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Section: Audience & Instructor -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Target Audience -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                        <i class="fa-solid fa-crosshairs text-secondary"></i> 這堂課適合誰？
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                            <h4 class="text-xl font-bold text-secondary mb-2">實體店面老闆</h4>
+                            <p class="text-gray-400">想在地方商圈脫穎而出，稱霸 Google 地圖，讓附近客源主動找上門的餐飲、美容、診所等店家。</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                            <h4 class="text-xl font-bold text-secondary mb-2">個人品牌 / 獨立業務</h4>
+                            <p class="text-gray-400">房仲、保險、健身教練等，需要專業數位門面提高客戶信任度，讓社群互動順利轉化為成交率。</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                            <h4 class="text-xl font-bold text-secondary mb-2">行銷企劃 / 社群小編</h4>
+                            <p class="text-gray-400">想跳脫純粹發文的框架，掌握最新「數位獲客流程建置」，替公司帶來實質業績，提升職場硬實力。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor Profile -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                        <i class="fa-solid fa-user-tie text-blue-400"></i> 專家講師陣容
+                    </h2>
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 h-full">
+                        <div class="flex items-center gap-6 mb-6">
+                            <img src="https://placehold.co/120x120/1E40AF/FFFFFF?text=講師" alt="講師頭像" class="w-24 h-24 rounded-full border-4 border-gray-700 object-cover">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-1">電商神助手 總監</h3>
+                                <p class="text-blue-400 font-medium">全域數位行銷專家 / AI 流程建置顧問</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4 text-gray-300 leading-relaxed">
+                            <p>
+                                專注於 **AI 數位流程建置**與全域行銷整合。擁有深厚的電商實戰底蘊，擅長將繁雜的數位工具轉化為自動化的商業運作流程。
+                            </p>
+                            <p>
+                                從前期流量導入、Linkgoods 數位名片整合，到在地商家 SEO 收網，已帶領無數在地品牌與業務建立高效的數位變現系統。
+                            </p>
+                            <p class="font-bold text-white mt-4 border-l-4 border-secondary pl-4">
+                                「別再盲目追求按讚數，我將用最實戰的經驗，教你把流量化為實質營收！」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="py-20 bg-light relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+                <div class="bg-primary p-8 text-center text-white">
+                    <h2 class="text-3xl font-bold mb-2">🔥 立即搶佔早鳥席次</h2>
+                    <p class="text-blue-100">現在建立你的專屬數位獲客系統，別讓辛苦經營的流量白白流失！</p>
+                </div>
+                
+                <div class="p-8 md:p-12">
+                    <!-- Course Info summary inside form area -->
+                    <div class="flex flex-wrap gap-4 justify-center mb-8 pb-8 border-b border-gray-100">
+                        <div class="bg-blue-50 text-blue-800 px-4 py-2 rounded-full font-medium text-sm flex items-center gap-2">
+                            <i class="fa-regular fa-calendar"></i> 即將開課 (敬請期待)
+                        </div>
+                        <div class="bg-green-50 text-green-800 px-4 py-2 rounded-full font-medium text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-video"></i> 線上 Zoom 實戰班
+                        </div>
+                        <div class="bg-yellow-50 text-yellow-800 px-4 py-2 rounded-full font-medium text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-tag"></i> 限量早鳥優惠中
+                        </div>
+                    </div>
+
+                    <!-- The Form -->
+                    <form id="courseForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">真實姓名 <span class="text-red-500">*</span></label>
+                                <input type="text" id="fullName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-200 outline-none" placeholder="請輸入姓名">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">聯絡電話 <span class="text-red-500">*</span></label>
+                                <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-200 outline-none" placeholder="09XX-XXX-XXX">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">電子信箱 <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-200 outline-none" placeholder="your@email.com">
+                        </div>
+
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">品牌/公司名稱 (選填)</label>
+                            <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-200 outline-none" placeholder="您的品牌或店鋪名稱">
+                        </div>
+
+                        <div>
+                            <label for="industry" class="block text-sm font-medium text-gray-700 mb-1">所屬產業別 <span class="text-red-500">*</span></label>
+                            <select id="industry" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-200 outline-none bg-white">
+                                <option value="" disabled selected>請選擇產業</option>
+                                <option value="retail">實體零售 / 餐飲</option>
+                                <option value="service">在地服務 (美容/美髮/診所等)</option>
+                                <option value="sales">業務性質 (房仲/保險/直銷)</option>
+                                <option value="personal">個人品牌 / 自媒體創作者</option>
+                                <option value="b2b">B2B 企業</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="painpoint" class="block text-sm font-medium text-gray-700 mb-1">目前遇到最大的獲客難題是？ (選填)</label>
+                            <textarea id="painpoint" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-200 outline-none resize-none" placeholder="例如：IG很多人按讚但沒人買..."></textarea>
+                        </div>
+
+                        <div class="pt-4">
+                            <button type="submit" class="w-full bg-secondary hover:bg-yellow-500 text-white font-bold text-xl py-4 rounded-xl shadow-lg transition duration-300 flex justify-center items-center gap-2">
+                                送出報名資料 <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <p class="text-center text-xs text-gray-500 mt-4">點擊送出即表示您同意接收本課程相關的最新資訊通知。</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Success Modal (Hidden by default) -->
+    <div id="successModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fa-solid fa-check text-4xl text-green-500"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">報名資料已送出！</h3>
+            <p class="text-center text-gray-600 mb-8">
+                感謝您的報名！我們已收到您的資料，後續將有專人透過 Email 或電話與您聯繫開課細節，請留意您的信箱。
+            </p>
+            <button onclick="closeModal()" class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-3 rounded-xl transition duration-300">
+                我知道了
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-10 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center items-center gap-4 mb-6 text-2xl text-gray-500">
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-line"></i></a>
+            </div>
+            <p>&copy; 2026 電商神助手 全域數位行銷. All rights reserved.</p>
+            <p class="text-sm mt-2">此網頁為示範用途，無實際收費行為。</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form Submission Logic
+        const form = document.getElementById('courseForm');
+        const modal = document.getElementById('successModal');
+        const modalContent = modal.querySelector('div');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page refresh
+            
+            // In a real app, you would send data to a backend (e.g., Google Sheets, CRM, API) here.
+            // Example of getting values:
+            // const name = document.getElementById('fullName').value;
+            // console.log("Submitting for:", name);
+
+            // Show Modal
+            modal.classList.remove('hidden');
+            // Small delay to allow CSS display:block to apply before changing opacity for transition
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+
+            // Reset form
+            form.reset();
+        });
+
+        // Close Modal Logic
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300); // Wait for transition to finish
+        }
+
+        // Close modal when clicking outside of it
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
